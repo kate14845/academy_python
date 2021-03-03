@@ -65,7 +65,7 @@ def sommaNminori():
         cont+=1
     print(cont-1)
 
-def esame():
+def risultatoesame():
     # funzione che chiede in input da tastiera i voti dello scritto e dell'orale di un esame 
     # e restituisce il risultato dell'esame
     

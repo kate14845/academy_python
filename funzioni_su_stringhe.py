@@ -46,3 +46,14 @@ def findlettera():
                         contatore=contatore+1
                 k+=1
         print(lettera+' appare in '+parola,contatore,'volte')
+
+def trovaParola(parola,posizione):
+    #funzione che prende come input il nome di un file di testo presente nella stessa cartella e una parola
+    #restituisce se la parola è presente nel testo
+    fin=open(posizione)
+    for riga in fin:
+        riga=riga.strip()
+        if parola==riga:
+            return True
+    return False
+
