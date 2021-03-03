@@ -1,3 +1,7 @@
+import math
+import random
+
+
 def ilPiuGrande(a,b):
     #funzione che prende in input due interi e restituisce 
     #il maggiore 
@@ -27,7 +31,7 @@ def sommanumeriinseriti():
     while flag==1:
         num=int(input('dammi un numero '))
         if num==0:
-            print(àsomma)
+            print(somma)
             flag=0
         else:
             somma=somma+num
@@ -140,3 +144,30 @@ def numeri():
             return max
         elif num>max:
             max=num
+
+def ordine(a,b):
+    # funzione che, dati due interi, stampa a video il più piccolo seguito dal più grande
+    if a>b:
+        print(b+', '+a)
+    else: 
+        print(a+', '+b)
+
+
+def ruotadi90(angolo):
+    #funzione che, dato un angolo in gradi 
+    #restituisce il seno dell'angolo ruotato di 90 gradi 
+    
+    risultato=math.sin(math.radians(angolo)+math.pi/2)
+    print(risultato)
+
+def chevoto():
+    # funzione che dato un intero restituisce l'esito del voto
+    voto=int(input('dammi un voto da 0 a 10 '))
+    if voto>5:
+        print('Promosso')
+    elif voto==5:
+        print('Rimandato')
+    elif 2<voto<5:
+        print('Bocciato')
+    elif voto<=2:
+        print('Espulso')
