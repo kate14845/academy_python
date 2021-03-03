@@ -10,21 +10,19 @@ def controllo_palindromo():
             return False
     return True
 
-def numeri():
-    # funzione che chiede un numero variabile di numeri da tastiera
-    # e restituisce il massimo
-    # si chiude quando viene immesso 0
+def palindroma():
+    # funzione che chiede da tastiera una parola e stampa a video se è palindroma
+    parola=input('dammi una parola ')
+    lung=len(parola)
+    flag=True
+    for i in range(lung):
+        if parola[i]!=parola[-i-1]:
+            flag=False
+    if flag:
+        print(parola+' è palindroma') 
+    else:
+        print(parola+' non è palindroma') 
 
-    num=int(input('dammi un numero '))
-    max=num
-    if num==0:
-        return 'no numeri'
-    while 3>1:
-        num=int(input('dammi un numero '))
-        if num==0:
-            return max
-        elif num>max:
-            max=num
 
 
 def lenper():
@@ -35,3 +33,16 @@ def lenper():
         if lettera !=" ":
             conta+=1
     print(conta)
+
+def findlettera():
+    # funzione che chiede da tastiera una parola e una lettera
+    # e stampa quante volte la lettera appare nella parola
+        parola=input('che parola vuoi? ')
+        lettera=input('che lettera cerchi? ')
+        k=0
+        contatore=0
+        while k<len(parola):
+                if parola[k]==lettera:
+                        contatore=contatore+1
+                k+=1
+        print(lettera+' appare in '+parola,contatore,'volte')
