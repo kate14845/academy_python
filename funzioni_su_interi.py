@@ -12,6 +12,8 @@ def ilPiuGrande(a,b):
         return b
 
 
+
+
 def isTriangle(a, b, c):
     # funzione che prende tre interi e stampa a schermo se possono essere le lunghezze di lati di un triangolo
 
